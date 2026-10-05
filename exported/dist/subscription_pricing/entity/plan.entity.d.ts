@@ -1,0 +1,32 @@
+import { PlanBilling } from './plan-billing.entity';
+import { PlanFeatureMapping } from './plan-feature-mapping.entity';
+import { OrgSubscription } from './org_subscription.entity';
+import { PlanSetting } from './plan_setting.entity';
+import { OfflinePaymentRequest } from './offline_payment_requests.entity';
+import { Product } from './product.entity';
+import { Service } from 'src/services/entity/services.entity';
+import { PlanServiceMapping } from '../../services/entity/plan_services_mapping.entity';
+export declare class Plan {
+    plan_id: number;
+    plan_name: string;
+    description: string;
+    created_at: Date;
+    updated_at: Date;
+    is_active: boolean;
+    is_deleted: boolean;
+    set_trial: boolean;
+    trial_type: string;
+    trial_period: number;
+    trial_period_unit: string;
+    trial_period_count: number;
+    trial_amount: number;
+    billings: PlanBilling[];
+    featureMappings: PlanFeatureMapping[];
+    subscriptions: OrgSubscription[];
+    settings: PlanSetting[];
+    offlineRequests: OfflinePaymentRequest[];
+    productId: number;
+    product: Product;
+    services: Service[];
+    serviceMappings: PlanServiceMapping[];
+}

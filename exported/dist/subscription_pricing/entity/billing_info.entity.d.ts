@@ -1,0 +1,34 @@
+import { OrgSubscription } from '../entity/org_subscription.entity';
+import { OfflinePaymentRequest } from './offline_payment_requests.entity';
+import { PaymentMethod } from './payment_methods.entity';
+import { Product } from './product.entity';
+export declare class BillingInfo {
+    billing_id: number;
+    org_subscription_id?: number;
+    orgSubscription: OrgSubscription;
+    first_name: string;
+    last_name: string;
+    email: string;
+    phone_number: string;
+    company_name: string;
+    address_line1: string;
+    address_line2: string;
+    city: string;
+    state: string;
+    postal_code: string;
+    country: string;
+    gst_number: string;
+    tax_id: string;
+    status: string;
+    same_as_primary_contact: boolean;
+    methodId: number;
+    paymentMethod: PaymentMethod;
+    created_at: Date;
+    updated_at: Date;
+    orderplacedby: string;
+    paymentterm: string;
+    customerpo: string;
+    productId: number;
+    offlineRequests: OfflinePaymentRequest[];
+    product: Product;
+}

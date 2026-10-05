@@ -1,0 +1,1 @@
+export declare const SalesEnquiryEmail: ({ name, email, phone, companyName, jobTitle, requirements, message, companySize, industry, budgetRange, timeline, convertToEnquiryUrl, companySizeLabel, industryLabel, budgetRangeLabel, timelineLabel, }: any) => any;

@@ -1,0 +1,3 @@
+import { ListViewDto } from 'src/common/list-view-dto-notifications/list-view.dto';
+import { CommonListViewConfig } from 'src/common/list-view-dto-notifications/common-list-view.interface';
+export declare const CostCenterVariablesConfig: Partial<ListViewDto> & CommonListViewConfig;
